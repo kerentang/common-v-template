@@ -20,6 +20,9 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-#Notation Please:
-## change config/index.js/host:localhost to host: 0.0.0.0, you can change back
+>Notation Please
+```
+# config/index.js, Access to the dev-project through ip
+host:localhost -> host: 0.0.0.0
+```
 
