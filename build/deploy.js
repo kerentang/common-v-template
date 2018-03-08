@@ -1,5 +1,5 @@
 /*
-*  // this file was wrote by liubin,his blog is https://coffeeteame.github.io
+*  this file was wrote by liubin,his blog is https://coffeeteame.github.io
 *  本脚本属于尝试性脚本
 *  用途:将所有静态资源文件部署到阿里云
 *  命令：npm run deploy (请务必在npm run build命令执行之后)
@@ -14,7 +14,7 @@ var path = require("path");
 var co = require('co');
 var OSS = require('ali-oss');
 
-// 配置以下CDN密码地址用户名等，目前密码地址为刘斌设置的密码和地址
+// 配置以下CDN密码地址用户名等
 // region,accessKeyId,accessKeySecret,bucket
 var client = new OSS({
   // region: 'your oss',
