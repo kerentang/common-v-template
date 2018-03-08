@@ -1,5 +1,6 @@
 import axios from 'axios'
 import qs from 'qs'
+// this file was wrote by liubin,his blog is https://coffeeteame.github.io
 //axios不支持jsonp请求,这个需要自己封装
 axios.jsonp = (url) => {
   if(!url){
@@ -24,7 +25,7 @@ axios.jsonp = (url) => {
 function loginTimeOut(data) {
   if(data.ret===401 || data.ret===402){
     console.log('请求401')
-    location.href = `http://baidu.com`
+    location.href = `your-url`
 
   }else if(data.ret===400){
     console.log('请求400')
@@ -55,7 +56,7 @@ export default (method,url,options) => {
     _option = {
       method:method,
       url:url,
-      baseURL:'http://baidu.com/',
+      baseURL:'your-base-url',
       timeout: 90000,
       params:null,
       data:null,
@@ -74,6 +75,7 @@ export default (method,url,options) => {
         reject(error)
       })
     }else{
+      // add token for login
       if(!window.TOKEN && url.indexOf('Passport.Login')=== -1){
         console.error('token无效')
         return;
