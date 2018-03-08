@@ -25,13 +25,13 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 # config/index.js, Access to the dev-project through ip
 host:localhost -> host: 0.0.0.0
 ```
->src/assets/common.scss
+### src/assets/common.scss
 global css varible,just use it;
->src/mystyle/index.scss
+### src/mystyle/index.scss
 you should import it in your component firstly and then use it;
->src/server/index.js
+### src/server/index.js
 axios: jsonp / get / post;
->src/server/api.js
+### src/server/api.js
  all apis of requests;
 
 
